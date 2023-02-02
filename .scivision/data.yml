@@ -1,0 +1,10 @@
+sources:
+  maps:
+      description: Sample images required to demonstrate the ResNet50 model trained in the Rapid Identification of Plankton using Machine Learning DSG undertaken by Cefas, The Alan Turing Institute and Plankton Analytics Ltd.
+      origin:
+      driver: intake_xarray.image.ImageSource
+      args:
+        urlpath: ["zip://*.tif::https://zenodo.org/record/7147906/files/https://zenodo.org/record/7147906/files/MapReader_Data_SIGSPATIAL_2022.zip"]
+        chunks: {}
+        storage_options: {'anon': True}
+        exif_tags: True

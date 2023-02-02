@@ -1,10 +1,19 @@
 sources:
   maps:
-      description: Sample images required to demonstrate the ResNet50 model trained in the Rapid Identification of Plankton using Machine Learning DSG undertaken by Cefas, The Alan Turing Institute and Plankton Analytics Ltd.
+      description: Map sheets retrieved from the National Library of Scotland via webservers. These maps were later sliced into patches which can be found in 'patches' datasource
       origin:
       driver: intake_xarray.image.ImageSource
       args:
-        urlpath: ["zip://*.tif::https://zenodo.org/record/7147906/files/https://zenodo.org/record/7147906/files/MapReader_Data_SIGSPATIAL_2022.zip"]
+        urlpath: ["zip://annotations/maps/*.png::https://zenodo.org/record/7147906/files/MapReader_Data_SIGSPATIAL_2022.zip"]
+        chunks: {}
+        storage_options: {'anon': True}
+        exif_tags: True
+  patches:
+      description: 100 by 100 metre patches of sliced Maps retrieved from the National Library of Scotland via webservers.
+      origin:
+      driver: intake_xarray.image.ImageSource
+      args:
+        urlpath: ["zip://annotations/slice_meters_100_100/*.png::https://zenodo.org/record/7147906/files/MapReader_Data_SIGSPATIAL_2022.zip"]
         chunks: {}
         storage_options: {'anon': True}
         exif_tags: True

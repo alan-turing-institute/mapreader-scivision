@@ -6,8 +6,6 @@ sources:
       args:
         urlpath: ["zip://annotations/maps/*.png::simplecache::https://zenodo.org/record/7147906/files/MapReader_Data_SIGSPATIAL_2022.zip"]
         chunks: {}
-        storage_options: {'anon': True}
-        exif_tags: True
   patches:
       description: 100 by 100 metre patches of sliced Maps retrieved from the National Library of Scotland via webservers.
       origin:
@@ -15,5 +13,3 @@ sources:
       args:
         urlpath: ["zip://annotations/slice_meters_100_100/*.png::simplecache::https://zenodo.org/record/7147906/files/MapReader_Data_SIGSPATIAL_2022.zip"]
         chunks: {}
-        storage_options: {'anon': True}
-        exif_tags: True

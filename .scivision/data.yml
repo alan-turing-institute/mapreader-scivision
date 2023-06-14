@@ -7,7 +7,6 @@ sources:
       args:
         urlpath: "{{ CATALOG_DIR }}/annotations/maps/*.png"
         chunks: {}
-        storage_options: {'anon': True}
   patches:
       description: 100 by 100 metre patches of sliced Maps retrieved from the National Library of Scotland via webservers.
       origin:

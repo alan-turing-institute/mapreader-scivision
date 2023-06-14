@@ -4,7 +4,7 @@ sources:
       origin:
       driver: intake_xarray.image.ImageSource
       args:
-        urlpath: ["zip://annotations/maps/*.png::https://zenodo.org/record/7116801/files/MapReader_Data_SIGSPATIAL_2022.zip"]
+        urlpath: ["zip://annotations/maps/*.png::simplecache::https://zenodo.org/record/7116801/files/MapReader_Data_SIGSPATIAL_2022.zip"]
         chunks: {}
         storage_options: {'anon': True}
   patches:

@@ -5,7 +5,7 @@ sources:
       metadata:
         zenodo_doi: "10.5281/zenodo.7147906"
       args:
-        urlpath: "{{ CATALOG_DIR }}/annotations/maps/*.png"
+        urlpath: ["zip://annotations/maps/*.png::simplecache::https://zenodo.org/record/7147906/files/MapReader_Data_SIGSPATIAL_2022.zip"]
         chunks: {}
   patches:
       description: 100 by 100 metre patches of sliced Maps retrieved from the National Library of Scotland via webservers.

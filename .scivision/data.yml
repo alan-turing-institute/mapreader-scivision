@@ -3,7 +3,7 @@ sources:
       description: Map sheets retrieved from the National Library of Scotland via webservers. These maps were later sliced into patches which can be found in 'patches' datasource
       driver: intake_xarray.image.ImageSource
       metadata:
-        xenodo_doi: "10.5281/zenodo.7147906"
+        zenodo_doi: "10.5281/zenodo.7147906"
       args:
         urlpath: ["{{ CATALOG_DIR }}/annotations/maps/*.png"]
         chunks: {}

@@ -5,7 +5,7 @@ sources:
       metadata:
         zenodo_doi: "10.5281/zenodo.7147906"
       args:
-        urlpath: ["{{ CATALOG_DIR }}/annotations/maps/*.png"]
+        urlpath: "{{ CATALOG_DIR }}/annotations/maps/*.png"
         chunks: {}
         storage_options: {'anon': True}
   patches:
